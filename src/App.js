@@ -27,7 +27,7 @@ function App() {
       try {
 
         if (cityName !== ""){
-          const url = `http://api.weatherapi.com/v1/current.json?key=894395e4eff64db7bd8204150232506&q=${cityName}&aqi=no`;
+          const url = `https://api.weatherapi.com/v1/current.json?key=894395e4eff64db7bd8204150232506&q=${cityName}&aqi=no`;
           const response = await fetch(url, options);
           const data = await response.json();
           setWeather(data);
